@@ -1,5 +1,11 @@
 let display = document.getElementById("display");
 
+let storedValues = {
+    operator : "+",
+    num1 : 0,
+    num2 : 2,
+};
+
 function displayNumber(value) {
     if (display.innerText === "+" ||
     display.innerText === "-" ||
@@ -12,7 +18,14 @@ function displayNumber(value) {
 };
 
 function displayOperator(value) {
+    storedValues.num1 = Number(display.innerText);
     display.innerText = value;
+    storedValues.operator = value;
+}
+
+function displayResults() {
+    storedValues.num2 = Number(display.innerText);
+    display.innerText = operate(storedValues.operator, storedValues.num1, storedValues.num2);
 }
 
 function add(num1, num2) {

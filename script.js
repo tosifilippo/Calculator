@@ -1,3 +1,20 @@
+let display = document.getElementById("display");
+
+function displayNumber(value) {
+    if (display.innerText === "+" ||
+    display.innerText === "-" ||
+    display.innerText === "*" ||
+    display.innerText === "/") {
+        display.innerText = value;
+    } else {
+        display.innerText += value;
+    };
+};
+
+function displayOperator(value) {
+    display.innerText = value;
+}
+
 function add(num1, num2) {
     return num1 + num2;
 };

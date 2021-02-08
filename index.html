@@ -5,28 +5,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="nmbr-btns-cntnr">
-        <button class="nmbr-btn">0</button>
-        <button class="nmbr-btn">1</button>
-        <button class="nmbr-btn">2</button>
-        <button class="nmbr-btn">3</button>
-        <button class="nmbr-btn">4</button>
-        <button class="nmbr-btn">5</button>
-        <button class="nmbr-btn">6</button>
-        <button class="nmbr-btn">7</button>
-        <button class="nmbr-btn">8</button>
-        <button class="nmbr-btn">9</button>
+    <div id="number-btns-container">
+        <button class="number-btn" value="0" onclick="displayNumber(this.value)">0</button>
+        <button class="number-btn" value="1" onclick="displayNumber(this.value)">1</button>
+        <button class="number-btn" value="2" onclick="displayNumber(this.value)">2</button>
+        <button class="number-btn" value="3" onclick="displayNumber(this.value)">3</button>
+        <button class="number-btn" value="4" onclick="displayNumber(this.value)">4</button>
+        <button class="number-btn" value="5" onclick="displayNumber(this.value)">5</button>
+        <button class="number-btn" value="6" onclick="displayNumber(this.value)">6</button>
+        <button class="number-btn" value="7" onclick="displayNumber(this.value)">7</button>
+        <button class="number-btn" value="8" onclick="displayNumber(this.value)">8</button>
+        <button class="number-btn" value="9" onclick="displayNumber(this.value)">9</button>
     </div>
-    <div id="oprtr-btns-cntnr"> 
-        <button class="oprtr-btn">+</button>
-        <button class="oprtr-btn">-</button>
-        <button class="oprtr-btn">*</button>
-        <button class="oprtr-btn">/</button>
-        <button class="oprtr-btn">=</button>
-        <button class="oprtr-btn">C</button>
+    <div id="operator-btns-container"> 
+        <button class="operator-btn" value="+" onclick="displayOperator(this.value)">+</button>
+        <button class="operator-btn" value="-" onclick="displayOperator(this.value)">-</button>
+        <button class="operator-btn" value="*" onclick="displayOperator(this.value)">*</button>
+        <button class="operator-btn" value="/" onclick="displayOperator(this.value)">/</button>
     </div> 
-    <div id="dsply-cntnr">
-        <p>16</p>
+    <div id="functionality-btns-container">
+        <button class="functionality-btn" value="=" onclick="displayResult()">=</button>
+        <button class="functionality-btn" value="0" onclick="clear()">C</button>
+    </div>
+    <div id="display-container">
+        <p id="display"></p>
     </div>
 </body>
 <script src="script.js"></script>

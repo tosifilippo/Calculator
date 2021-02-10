@@ -4,6 +4,11 @@ let clearBtn = document.getElementById("clear-btn")
 
 clearBtn.addEventListener("click", clear);
 
+window.addEventListener('keydown', function(e){
+    const key = document.querySelector(`button[event-key='${e.key}']`);
+    key.click();
+});
+
 function clear() {  
     display.innerText = "0";
     subDisplay.innerText = "0";

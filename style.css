@@ -13,45 +13,56 @@ body {
 #calc-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 3% 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 5% 15% auto auto auto auto auto;
     width: 400px;
     height: 700px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    border: solid;
 }
 
 #result-display {
     grid-row: 2;
     grid-column: 1/5;
     display: flex;
+    border-bottom: solid;
 }
 
 #display-text {
     font-size: large;
-    line-height: 350%;
+    line-height: 400%;
+    padding-left: 1%;
+
 }
 
 #main-display {
     font-size: xx-large;
     text-align: right;
     width: 100%;
+    padding-right: 1%;
+    line-height: 150%;
 }
 
 #secondary-display {
     grid-row: 1;
     grid-column: 1/5;
     display: flex;
+    border-bottom: solid;
 }
 
 #subtotal-text {
     font-size: small;
+    padding-left: 1%;
+    line-height: 20%;
 }
 
 #subtotal-display {
     font-size: medium;
     text-align: right;
     width: 100%;
+    line-height: 0%;
+    padding-right: 1%;
 }
 
 #backspace-btn {

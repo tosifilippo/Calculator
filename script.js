@@ -72,7 +72,7 @@ function displayResults() {
     if (storedValues.result != null) {
         storedValues.result = display.innerText
     } else {
-        // second operand is taken from display, operate functio is run and result is 
+        // second operand is taken from display, operate function is run and result is 
         // stored and shown in display, first operand is deleted.
         storedValues.num2 = Number(display.innerText);
         display.innerText = operate(storedValues.operator, storedValues.num1, storedValues.num2);

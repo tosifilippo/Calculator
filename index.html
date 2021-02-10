@@ -3,16 +3,17 @@
 <head>
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="calc-container">
         <div id="result-display">
             <p id="display-text">Total</p>
-            <p id="main-display">0</p>
+            <p id="main-display"></p>
         </div>
         <div id="secondary-display">
             <p id="subtotal-text">Subtotal</p>
-            <p id="subtotal-display">0</p>
+            <p id="subtotal-display"></p>
         </div>
         <button class="functionality-btn" id="clear-btn" event-key="c">Clear</button>
         <button class="functionality-btn" id="backspace-btn" event-key="Backspace" onclick="backSpace()">Canc</button>
@@ -30,7 +31,7 @@
         <button class="operator-btn" value="*" event-key="*" onclick="displayOperator(this.value)">*</button>
         <button class="number-btn" id="point-btn" value="." event-key="." onclick="displayNumber(this.value)">.</button>
         <button class="number-btn" value="0" event-key="0" onclick="displayNumber(this.value)">0</button>
-        <button class="operator-btn" value="=" event-key="Enter" onclick="displayResults()">=</button>
+        <button class="operator-btn" value="=" event-key="Enter" onclick="displayResults(this.value)">=</button>
         <button class="operator-btn" value="/" event-key="/" onclick="displayOperator(this.value)">/</button>
     </div>
 </body>

@@ -10,7 +10,7 @@ function clear() {
     storedValues.num1 = 0;
     storedValues.num2 = 0;
     storedValues.operator = "+";
-}
+};
 
 let storedValues = {
     operator : "+",
@@ -24,6 +24,11 @@ function displayNumber(value) {
     } else {
         display.innerText += value;
     };
+    if (display.innerText.includes(".")) {
+        document.getElementById("point-btn").disabled = true;
+    } else {
+        document.getElementById("point-btn").disabled = false;
+    }
 };
 
 function displayOperator(value) { 
@@ -39,6 +44,11 @@ function displayOperator(value) {
         display.innerText = "";
         storedValues.operator = value;
     };
+};
+
+function backSpace() {
+    let str = display.innerText;
+    display.innerText = str.substr(0, str.length - 1);
 };
 
 function displayResults() {

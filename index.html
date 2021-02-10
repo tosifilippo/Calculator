@@ -5,35 +5,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="number-btns-container">
-        <button class="number-btn" value="0" event-key="0" onclick="displayNumber(this.value)">0</button>
-        <button class="number-btn" value="1" event-key="1" onclick="displayNumber(this.value)">1</button>
-        <button class="number-btn" value="2" event-key="2" onclick="displayNumber(this.value)">2</button>
-        <button class="number-btn" value="3" event-key="3" onclick="displayNumber(this.value)">3</button>
-        <button class="number-btn" value="4" event-key="4" onclick="displayNumber(this.value)">4</button>
-        <button class="number-btn" value="5" event-key="5" onclick="displayNumber(this.value)">5</button>
-        <button class="number-btn" value="6" event-key="6" onclick="displayNumber(this.value)">6</button>
-        <button class="number-btn" value="7" event-key="7" onclick="displayNumber(this.value)">7</button>
-        <button class="number-btn" value="8" event-key="8" onclick="displayNumber(this.value)">8</button>
-        <button class="number-btn" value="9" event-key="9" onclick="displayNumber(this.value)">9</button>
-        <button class="number-btn" id="point-btn" value="." event-key="." onclick="displayNumber(this.value)">.</button>
-        <button class="number-btn" id="backspace-btn" value="canc" event-key="Backspace" onclick="backSpace()">Canc</button>
-    </div>
-    <div id="operator-btns-container"> 
-        <button class="operator-btn" value="+" event-key="+" onclick="displayOperator(this.value)">+</button>
-        <button class="operator-btn" value="-" event-key="-" onclick="displayOperator(this.value)">-</button>
-        <button class="operator-btn" value="*" event-key="*" onclick="displayOperator(this.value)">*</button>
-        <button class="operator-btn" value="/" event-key="/" onclick="displayOperator(this.value)">/</button>
-    </div> 
-    <div id="functionality-btns-container">
-        <button class="functionality-btn" value="=" event-key="Enter" onclick="displayResults()">=</button>
-        <button id="clear-btn" value="0" event-key="c">C</button>
-    </div>
-    <div id="display-container">
-        <h1>Main display</h1>
-        <p id="main-display">0</p>
-        <h1>Subtotal</h1>
-        <p id="subtotal-display">0</p>
+    <div id="calc-container">
+        <div id="number-btns-container">
+            <button class="number-btn" value="0" event-key="0" onclick="displayNumber(this.value)">0</button>
+            <button class="number-btn" value="1" event-key="1" onclick="displayNumber(this.value)">1</button>
+            <button class="number-btn" value="2" event-key="2" onclick="displayNumber(this.value)">2</button>
+            <button class="number-btn" value="3" event-key="3" onclick="displayNumber(this.value)">3</button>
+            <button class="number-btn" value="4" event-key="4" onclick="displayNumber(this.value)">4</button>
+            <button class="number-btn" value="5" event-key="5" onclick="displayNumber(this.value)">5</button>
+            <button class="number-btn" value="6" event-key="6" onclick="displayNumber(this.value)">6</button>
+            <button class="number-btn" value="7" event-key="7" onclick="displayNumber(this.value)">7</button>
+            <button class="number-btn" value="8" event-key="8" onclick="displayNumber(this.value)">8</button>
+            <button class="number-btn" value="9" event-key="9" onclick="displayNumber(this.value)">9</button>
+            <button class="number-btn" id="point-btn" value="." event-key="." onclick="displayNumber(this.value)">.</button>
+            <button class="number-btn" id="backspace-btn" event-key="Backspace" onclick="backSpace()">Canc</button>
+        </div>
+        <div id="operator-btns-container"> 
+            <button class="operator-btn" value="+" event-key="+" onclick="displayOperator(this.value)">+</button>
+            <button class="operator-btn" value="-" event-key="-" onclick="displayOperator(this.value)">-</button>
+            <button class="operator-btn" value="*" event-key="*" onclick="displayOperator(this.value)">*</button>
+            <button class="operator-btn" value="/" event-key="/" onclick="displayOperator(this.value)">/</button>
+            <button class="functionality-btn" value="=" event-key="Enter" onclick="displayResults()">=</button>
+            <button id="clear-btn" event-key="c">C</button>
+        </div>
+        <div id="display-container">
+            <h1>Main display</h1>
+            <p id="main-display">0</p>
+            <h1>Subtotal</h1>
+            <p id="subtotal-display">0</p>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>

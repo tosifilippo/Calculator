@@ -36,7 +36,7 @@
 }
 
 #opal::after {
-    background-color: #96C0B7
+    background-color: #96C0B7;
 }
 
 #beige {
@@ -79,7 +79,6 @@
     width: 20px;
     grid-row: 2;
     transform: rotate(45deg);
-    grid-row: 2;
 }
 
 .mult:after {
@@ -95,9 +94,7 @@
     height: 100px;
     position: relative;
     width: 20px;
-    grid-row: 2;
     transform: rotate(20deg);
-    background-color: rebeccapurple;
     grid-row: 7;
 }
 
@@ -137,18 +134,19 @@
     background-color: #F4D35E;
 }
 
-#green {
-    right: 170%;
-    top: 20%;
-    background-color: #EB8499;
-}
-
-#blu {
-    background-color: #97728E;
-}
-
 #purple {
+    right: 170%;
+    top: 30%;
+    background-color: #cdb4db;
+}
+
+#pink {
+    background-color: #ffc8dd;
+    top: 10%;
+}
+
+#fuchsia {
     left: 170%;
-    background-color: #97728E;
-    bottom: 20%;
+    background-color: #ffafcc;
+    bottom: 10%;
 }

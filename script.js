@@ -68,8 +68,8 @@ function displayOperator(value) {
 
 // function triggers when "=" is clicked.
 function displayResults() {
-    // if result exist it stays on display
-    if (storedValues.result != null) {
+    // if result exist or fist operand is missing it stays on display
+    if ((storedValues.result != null) || (storedValues.num1 == null)){
         storedValues.result = display.innerText
     } else {
         // second operand is taken from display, operate function is run and result is 

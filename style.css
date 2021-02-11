@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    background-color: black;
 }
 
 body {
@@ -18,11 +17,10 @@ body {
     width: 400px;
     height: 700px;
     position: absolute;
-    top: 50%;
+    top: 54%;
     transform: translateY(-50%);
     border: solid;
     font-family: 'Roboto Mono', monospace, sans-serif;
-    color: green;
 }
 
 #result-display {
@@ -79,9 +77,161 @@ body {
 }
 
 button {
-    background-color: black;
-    color: green;
     font-size: xx-large;
     font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
+.plus {
+    height: 100px;
+    position: relative;
+    width: 20px;
+    grid-row: 2;
+}
+
+.plus:after {
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+}
+
+#left-container {
+    margin-right: 50%;
+    margin-top: 10%;
+    display: grid;
+}
+
+#grey {
+    background-color: #878E88;
+    left: 75%;
+    top: 20%;
+}
+
+#grey::after {
+    background-color: #878E88;
+}
+
+#opal {
+    background-color: #96C0B7;
+    left: 30%;
+}
+
+#opal::after {
+    background-color: #96C0B7
+}
+
+#beige {
+    background-color: #D4DFC7;
+    bottom: 20%;
+    right: 15%;
+}
+
+#beige::after {
+    background-color: #D4DFC7;
+}
+
+.minus {
+    width: 120px;
+    height: 20px;
+    position: relative;
+    grid-row: 7;
+}
+
+#frost {
+    background-color: #C1C5D7;
+    left: 70%;
+    top: 20%;
+}
+
+#dark {
+    background-color: #8A9DBC;
+
+}
+
+#blue {
+    background-color: #91AFCA;
+    bottom: 20%;
+    right: 70%;
+}
+
+.mult {
+    height: 100px;
+    position: relative;
+    width: 20px;
+    grid-row: 2;
+    transform: rotate(45deg);
+    grid-row: 2;
+}
+
+.mult:after {
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+}
+
+.divi {
+    height: 100px;
+    position: relative;
+    width: 20px;
+    grid-row: 2;
+    transform: rotate(20deg);
+    background-color: rebeccapurple;
+    grid-row: 7;
+}
+
+#right-container {
+    display: grid;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+#orange {
+    right: 75%;
+    bottom: 20%;   
+    background-color: #E5B78B;
+}
+
+#orange:after {
+    background-color: #E5B78B ;
+}
+
+
+#red {
+    background-color: #EE964B;
+    right: 30%;
+}
+
+#red::after {
+    background-color: #EE964B;
+}
+
+#yellow {
+    left: 15%;
+    top: 20%;
+    background-color: #F4D35E;
+}
+
+#yellow:after {
+    background-color: #F4D35E;
+}
+
+#green {
+    right: 170%;
+    top: 20%;
+    background-color: #EB8499;
+}
+
+#blu {
+    background-color: #97728E;
+}
+
+#purple {
+    left: 170%;
+    background-color: #97728E;
+    bottom: 20%;
+}
